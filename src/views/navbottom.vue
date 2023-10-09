@@ -1,25 +1,40 @@
 <script setup>
+import { ref } from "vue"
 
+let footerList = ref([
+    {
+        title: '首页',
+        icon: 'icon-shouye',
+        path: '/index'
+    },
+    {
+        title: '发现',
+        icon: 'icon-faxian1',
+        path: '/find'
+    },
+    {
+        title: '消息',
+        icon: 'icon-xiaoxi1',
+        path: '/message'
+    },
+    {
+        title: '我的',
+        icon: 'icon-wode-',
+        path: '/my'
+    }
+])
 </script>
 
 <template>
     <div class="footer">
-        <ul>
-            <li>
-                <i class="iconfont icon-shouye"></i>
-                <span>首页</span>
-            </li>
-            <li>
-                <i class="iconfont icon-faxian1"></i>
-                <span>发现</span>
-            </li>
-            <li><i class="iconfont icon-xiaoxi"></i>
-                <span>消息</span>
-            </li>
-            <li><i class="iconfont icon-wode-"></i>
-                <span>我的</span>
-            </li>
-        </ul>
+        <div class="footer-list">
+            <ul>
+                <li v-for="(v, i) in footerList" :key="i">
+                    <i class="iconfont" :class="v.icon"></i>
+                    <span>{{ v.title }}</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
