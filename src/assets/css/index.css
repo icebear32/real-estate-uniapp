@@ -157,3 +157,57 @@ header {
     transform: translateY(-120px);
   }
 }
+
+/* 多行导航栏 */
+.navmenu {
+  /* background-color: #999; */
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  min-height: 20rem;
+  position: relative;
+  scroll-snap-type: x mandatory;
+}
+
+.navmenu::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-1,
+.nav-2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  scroll-snap-align: start;
+}
+
+.nav-1 {
+  left: 0%;
+}
+
+.nav-2 {
+  left: 100%;
+}
+
+.navmenu-left {
+  width: 25%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.navmenu-left svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navmenu-left span {
+  display: block;
+}
+
+.navmenu .navmenu-left:nth-child(-n + 4) svg {
+  width: 4rem;
+  height: 4rem;
+}
