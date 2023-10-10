@@ -288,14 +288,14 @@ header {
 
 /* 内容展示部分 */
 /* .content ul {
-    display: flex;
-    flex-flow: column wrap;
-    height: 1000px
-  }
-  .content ul li {
-    width: 50%;
-    padding: 5px;
-  } */
+  display: flex;
+  flex-flow: column wrap;
+  height: 1000px
+}
+.content ul li {
+  width: 50%;
+  padding: 5px;
+} */
 /* 多行布局实现瀑布流 */
 .content {
   max-width: 1080px;
@@ -544,13 +544,13 @@ header {
 
 /* 弹性布局 */
 /* .module ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .module ul li {
-    width: 25%;
-    text-align: center;
-  } */
+  display: flex;
+  flex-wrap: wrap;
+}
+.module ul li {
+  width: 25%;
+  text-align: center;
+} */
 /* 登录 */
 .login {
   max-width: 1080px;
