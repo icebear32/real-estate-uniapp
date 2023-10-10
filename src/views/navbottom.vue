@@ -30,8 +30,10 @@ let footerList = ref([
         <div class="footer-list">
             <ul>
                 <li v-for="(v, i) in footerList" :key="i">
-                    <i class="iconfont" :class="v.icon"></i>
-                    <span>{{ v.title }}</span>
+                    <router-link :to="v.path">
+                        <i class="iconfont" :class="v.icon"></i>
+                        <span>{{ v.title }}</span>
+                    </router-link>
                 </li>
             </ul>
         </div>
