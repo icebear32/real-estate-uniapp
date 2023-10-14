@@ -40,4 +40,45 @@ let footerList = ref([
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* 底部导航栏 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    transform: none;
+}
+
+.footer-list {
+    max-width: 1080px;
+    height: 6rem;
+    margin: 0 auto;
+}
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.footer ul li {
+    flex: 1;
+}
+
+.footer li span {
+    display: block;
+}
+
+.footer li i {
+    font-size: 2.4rem;
+}
+
+.selected {
+    color: var(--bgcolor)
+}
+</style>

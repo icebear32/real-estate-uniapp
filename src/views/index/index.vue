@@ -3,6 +3,7 @@ import Header from './header.vue'
 import HeaderImg from './header-img.vue'
 import Navmenu from './navmenu.vue'
 import Houseprices from './houseprices.vue'
+import Banner from './banner.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import Houseprices from './houseprices.vue'
   <HeaderImg />
   <Navmenu />
   <Houseprices />
+  <Banner />
 </template>
 
 <style scoped></style>
